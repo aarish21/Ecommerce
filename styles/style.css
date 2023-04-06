@@ -165,3 +165,168 @@ nav {
     width: 50% ;
     height: 50px;
 }
+
+/* product */ 
+
+.product {
+    height: 100vh;
+    background-color: whitesmoke;
+    position: relative;
+}
+.productImg {
+    width: 50%;
+}
+.productDetails {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 40%;
+    padding: 50px;
+}
+.productTitle {
+    font-size: 75px;
+    font-weight: 500;
+}
+.productDesc {
+    font-style: 24px;
+}
+.colors,.sizes {
+    display: flex;
+    margin-bottom: 20px;
+}
+.color {
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: #111 ;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.color:last-child {
+    background-color: darkblue;
+}
+.size {
+    padding: 5px 20px;
+    border: 1px solid black;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.gallery {
+    padding: 50px;
+    display: flex;
+  }
+  
+  .galleryItem {
+    flex: 1;
+    padding: 50px;
+  }
+  
+  .galleryImg {
+    width: 100%;
+    
+  }
+  
+  .newSeason {
+    display: flex;
+  }
+
+  .nsItem {
+    flex: 1;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .nsImg {
+    width: 100%;
+    height: 500px;
+  }
+  
+  .nsTitle {
+    font-size: 40px;
+  }
+  
+  .nsButton {
+    padding: 15px;
+    font-weight: 600;
+    cursor: pointer;
+  }  
+
+  @media screen  and (max-width:480px) {
+    nav {
+        padding: 20px;
+    }
+    .search {
+        display: none;
+    }
+    .nav-bottom {
+        flex-wrap: wrap;
+    }
+    .menu-items {
+        margin: 20px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .slider-image {
+        width: 90%;
+    }
+    .slider-bg {
+        width: 100%;
+        height: 100%;  
+    }
+    .slider-title {
+        display: none;
+    }
+    .slider-price {
+        top: unset;
+        bottom:  0;
+        left: 0;
+        
+        font-size: 30px;
+    }
+    .buy-btn {
+        display: none;
+    }
+    .features {
+       flex-direction: column; 
+    }
+    .product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .productTitle{
+        font-size: 50px;
+        margin: 0;
+      }
+    .productImg {
+        width: 80%;
+    }
+    .productDetails {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center; 
+        position: relative;
+        top: 0;
+    }
+    .gallery{
+        display: none;
+      }
+    
+      .newSeason{
+        flex-direction: column;
+      }
+    
+      .nsItem:nth-child(2){
+        padding: 50px;
+      }
+    
+  }
